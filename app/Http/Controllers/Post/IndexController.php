@@ -12,7 +12,7 @@ class IndexController extends BaseController
     public function __invoke(FilterRequest $request)
     {
         $data = $request->validated();
-//        sfdfddf
+//        sfdfddffddfdfdfdf
         $filter = app()->make(PostFilter::class, ['queryParams' => array_filter($data)]);
 
         $posts = Post::filter($filter)->paginate(20);
